@@ -1,0 +1,4 @@
+SELECT customers.name,sales.quantity,products.name,products.price
+FROM customers 
+INNER JOIN sales ON customers.id=sales.customer_id 
+INNER JOIN products ON sales.product_id=products.id
